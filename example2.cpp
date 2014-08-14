@@ -1,14 +1,26 @@
-PConfig
-=======
+/**
+*************************************************************
+* @file main.cpp
+* @brief Breve descripción
+* Pequeña documentación del archivo
+*
+*
+*
+*
+*
+* @author Gaspar Fernández <blakeyed@totaki.com>
+* @version
+* @date 16 sep 2013
+* Historial de cambios:
+*
+*
+*
+*
+*
+*
+*
+*************************************************************/
 
-Read and parse ini file or inline data and allows access to its members using Glib::KeyFile
-Usefull to load configuration files or passing lots of arguments (even optional arguments) to a function.
-
-## Dependencies
-Glibmm-2.4 as it uses Glib::KeyFile to load data
-
-## Example (example2.cpp)
-```c++
 #include <iostream>
 #include "PConfig.h"
 #include <string>
@@ -69,13 +81,4 @@ int main(int argc, char *argv[])
 
   return EXIT_SUCCESS;
 }
-```
 
-## Default values
-  You can make a default values configuration using setDefaultValues, so
-when a value is not found in the main configuration structure it will
-search for it in the default values structure.
-
-## Compilation 
-
-$ g++ -o example example.cpp PConfig.cpp `pkg-config --cflags glibmm-2.4` `pkg-config --libs glibmm-2.4`
